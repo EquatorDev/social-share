@@ -1,0 +1,543 @@
+/*#region CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: 'Lato', 'Trebuchet MS', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body,
+html {
+  line-height: 1.5rem;
+  margin: 0 auto;
+  -webkit-text-size-adjust: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+b {
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+svg:not(:root) {
+  overflow: visible;
+}
+/*#endregion*/
+
+/*#region HEADINGS*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Francois One', sans-serif;
+  color: #163342;
+}
+
+h1 {
+  font-size: 30px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+/*#endregion*/
+
+/*#region LINKS*/
+a {
+  color: #26596a;
+}
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: #4daaab;
+  }
+/*#endregion*/
+
+/*#region FONT-FACES*/
+
+/*#endregion*/
+
+/*#region GENERICS*/
+
+html {
+  font-family: 'Lato', 'Trebuchet MS', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0 auto;
+  -webkit-text-size-adjust: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0 auto;
+  min-width: 100%;
+  max-width: 100%;
+  background: #5aded4;
+}
+/*#endregion*/
+
+/*#region HEADER*/
+
+header,
+.header {
+  background: #163342;
+  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+  header h4,
+  .header h4 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 10px 10px 0;
+  }
+/*#endregion*/
+
+/*#region MAIN CONTAINER*/
+
+.page-content {
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0 70px;
+  background: white;
+}
+
+  .page-content h1 {
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1;
+  }
+
+.page-wrapper {
+  width: auto;
+  height: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/*#endregion*/
+
+/*#region FOOTER*/
+
+footer,
+.footer {
+  background: #5aded4;
+  width: 100%;
+  min-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*#endregion*/
+
+.size-indicator {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  bottom: auto;
+  right: auto;
+  width: 1px;
+  height: 1px;
+}
+
+.hide {
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+
+
+/*#region Home Slider*/
+.page-menu {
+  margin: 20px auto 100px;
+  font-size: 0;
+  text-align: center;
+}
+
+  .page-menu .page-menu-content {
+    margin: 0 0 40px;
+  }
+
+    .page-menu .page-menu-content p {
+      margin: 0 0 15px;
+    }
+
+    .page-menu .page-menu-content ul {
+      font-size: 9px;
+      font-size: 0.9rem;
+      background: #eeeeee;
+      color: black;
+      padding: 10px 30px;
+      list-style: decimal;
+    }
+
+  .page-menu .page-menu-list {
+    font-size: 0px;
+    font-size: 0rem;
+  }
+
+    .page-menu .page-menu-list .navigation-section {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top;
+      margin: 20px 0;
+      font-size: 11px;
+      font-size: 1.1rem;
+    }
+
+      .page-menu .page-menu-list .navigation-section.active {
+        background: #eeeeee;
+      }
+
+      .page-menu .page-menu-list .navigation-section > .inner {
+        padding: 20px;
+      }
+
+      .page-menu .page-menu-list .navigation-section .section-heading {
+        margin-bottom: 10px;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+        .page-menu .page-menu-list .navigation-section .section-heading span {
+          font-weight: bold;
+        }
+
+      .page-menu .page-menu-list .navigation-section .section-content p {
+        margin-bottom: 10px;
+        font-size: 10px;
+        font-size: 1rem;
+      }
+
+      .page-menu .page-menu-list .navigation-section .section-content ul {
+        font-size: 9px;
+        font-size: 0.9rem;
+        text-align: left;
+        background: #eeeeee;
+        color: black;
+        padding: 10px 30px;
+        list-style: decimal;
+      }
+
+      .page-menu .page-menu-list .navigation-section .section-content .section-description {
+        margin: 10px 0 40px;
+      }
+/*#endregion*/
+
+.separator {
+  margin: 20px auto;
+  border-top: 1px solid #5aded4;
+  border-bottom: 1px solid white;
+  width: 25%;
+}
+
+code {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-size: 9px;
+  font-size: 0.9rem;
+  background: #eeeeee;
+  color: black;
+  border: 1px dashed #163342;
+  padding: 10px 2% 10px;
+  text-align: left;
+  width: 96%;
+  margin: 0 0 20px;
+}
+
+  code span {
+    font-weight: bold;
+  }
+
+.rich-text {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+
+
+@media only screen and (max-width: 569px) {
+  .carousel-navigation-panels .navigation-section {
+    display: block;
+    width: 98%;
+    padding: 0 1%;
+  }
+
+  .page-content {
+    padding: 25px 0 70px;
+    background: white;
+  }
+
+  header,
+  .header {
+    position: static;
+    width: 100%;
+  }
+}
+
+.grok3 h3 {
+  margin: 40px 0 20px;
+}
+/* Windows Phone ----------- */
+
+@-ms-viewport {
+  width: device-width;
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 480px) {
+  .size-indicator {
+    width: 3px;
+    height: 3px;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .size-indicator {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .size-indicator {
+    width: 5px;
+    height: 5px;
+  }
+
+  .page-menu .page-menu-list .navigation-section {
+    width: 33.33%;
+    margin: 0 0 20px 0;
+  }
+
+    .page-menu .page-menu-list .navigation-section .section-content p {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .page-menu .page-menu-list .navigation-section a {
+      cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+  .size-indicator {
+    width: 6px;
+    height: 6px;
+  }
+}
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+  .size-indicator {
+    width: 7px;
+    height: 7px;
+  }
+}
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1366px) {
+  .size-indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+/* Semi-Large screens ----------- */
+
+@media only screen and (min-width: 1440px) {
+  .size-indicator {
+    width: 9px;
+    height: 9px;
+  }
+}
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1600px) {
+  .size-indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
