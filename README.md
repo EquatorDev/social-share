@@ -1,5 +1,8 @@
 # social-share
-Very simple social share plugin that allows to share a page on facebook, twitter, google plus, linkedin, pinterest and email
+Very simple social share plugin that allows to share a page on facebook, twitter, google plus, linkedin, pinterest and email.
+No styling is applied to these as they are intended to be custom social buttons.
+
+This is the basis of the share functionality that you can customise on a project basis.
 
 ## Usage
 
