@@ -70,65 +70,85 @@
     };
 
     submodule.shareFunctionality = function () {
-      $('body').on('click', '.sharepage-btn.facebook', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+      $('body').on('click', '.sharepage-btn[data-social="facebook"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        window.open(
-          $(this).attr('data-href'),
-          'facebookDialog',
-          'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
-      });
+                window.open(
+                  $(this).attr('data-href'),
+                  'facebookDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
+            });
 
-      $('body').on('click', '.sharepage-btn.twitter', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            $('body').on('click', '.sharepage-btn[data-social="twitter"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        window.open(
-          $(this).attr('data-href'),
-          'twitterDialog',
-          'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=575,height=400');
-      });
+                window.open(
+                  $(this).attr('data-href'),
+                  'twitterDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=575,height=400');
+            });
 
-      $('body').on('click', '.sharepage-btn.google', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            $('body').on('click', '.sharepage-btn[data-social="google"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        window.open(
-          $(this).attr('data-href'),
-          'gplusDialog',
-          'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
-      });
+                window.open(
+                  $(this).attr('data-href'),
+                  'facebookDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
+            });
 
-      $('body').on('click', '.sharepage-btn.pinterest', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            $('body').on('click', '.sharepage-btn[data-social="twitter"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        window.open(
-          $(this).attr('data-href'),
-          'pinterestDialog',
-          'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
-      });
+                window.open(
+                  $(this).attr('data-href'),
+                  'twitterDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=575,height=400');
+            });
 
-      $('body').on('click', '.sharepage-btn.linkedin', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            $('body').on('click', '.sharepage-btn[data-social="google"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        window.open(
-          $(this).attr('data-href'),
-          'linkedinDialog',
-          'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
-      });
+                window.open(
+                  $(this).attr('data-href'),
+                  'gplusDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
+            });
 
-      $('body').on('click', '.sharepage-btn.email', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            $('body').on('click', '.sharepage-btn[data-social="pinterest"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        window.open(
-          $(this).attr('data-href'),
-          'emailDialog',
-          'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
-      });
+                window.open(
+                  $(this).attr('data-href'),
+                  'pinterestDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
+            });
+
+            $('body').on('click', '.sharepage-btn[data-social="linkedin"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                window.open(
+                  $(this).attr('data-href'),
+                  'linkedinDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
+            });
+
+            $('body').on('click', '.sharepage-btn[data-social="email"]', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                window.open(
+                  $(this).attr('data-href'),
+                  'emailDialog',
+                  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=626,height=436');
+            });
     };
 
     submodule.sharePage = function () {
