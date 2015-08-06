@@ -8,7 +8,7 @@ This is the basis of the share functionality that you can customise on a project
 
 There is a demo page that shows the implementation of each social button.
 
-Any element on the page can be a social button given that it has at least the class "socialshare-btn" and the data attribute data-social="(channel-name)".
+Any element on the page can be a social button given that it has at least the class "sharepage-btn" and the data attribute data-social="(channel-name)".
 
 The social channels values accepted are:
     "facebook"
